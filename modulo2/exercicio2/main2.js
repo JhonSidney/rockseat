@@ -1,6 +1,5 @@
 
 var btnElement =  document.querySelector('button.botao');
-var boxElement = document.querySelector(caixa);
 
 
 function gerarCaixa(){
@@ -23,6 +22,17 @@ function getRandomColor(){
     return color;
 }
 
+function mudaCaixa(){
+
+    var boxElement = document.querySelector('div');
+    boxElement.style.width = 100;
+    boxElement.style.height = 100;
+    boxElement.style.backgroundColor = getRandomColor();
+    boxElement.style.margin = 20;
+    boxElement.classList.add('box');
+    document.body.appendChild(boxElement);
+    
+}
 
 
-
+onmouseover = mudaCaixa;
