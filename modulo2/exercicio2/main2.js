@@ -2,7 +2,6 @@
 var btnElement =  document.querySelector('button.botao');
 
 
-
 function gerarCaixa(){
     var boxElement = document.createElement('div');
     boxElement.style.width = 100;
@@ -34,6 +33,7 @@ function mudaCaixa(){
     
 
 }
+
 
 
 onmouseover = mudaCaixa;
