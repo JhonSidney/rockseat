@@ -8,6 +8,7 @@ var users = ['Diego ','Gabriel ','Lucas '];
 
 function renderUsers(){
     listElement.innerHTML = '';
+    
     for(user of users){
         var userElement =  document.createElement('li');
         var usertext = document.createTextNode(user);
