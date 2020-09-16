@@ -4,6 +4,8 @@ var btnElement = document.querySelector('#app button');
 
 var repos = [];
 
+
+
 function renderRepos(){
     listElement.innerHTML = ' ';
     
@@ -21,11 +23,14 @@ function renderRepos(){
 
         linkElement.appendChild(linkText);
         repoElement.appendChild(repotext);
-        repoElement.appendChild(linkElement)
+        repoElement.appendChild(linkElement);
         listElement.appendChild(repoElement);
 
     }
 }
+
+
+
 
 function addRepo(){
     var repoText = inputElement.value;
@@ -55,13 +60,16 @@ function addRepo(){
     renderRepos();
 }
 
+
+
+
 function deleteRepo(pos){
     repos.splice(pos,1);
     renderRepos();
 }
 
-btnElement.onclick = addRepo;
-renderRepos();
+
+
 
 function load(){
     alert('Carregando...')
@@ -92,4 +100,6 @@ var minhaPromise =  function(name){
 
 
 
+btnElement.onclick = addRepo;
+renderRepos();
 
