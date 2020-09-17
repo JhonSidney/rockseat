@@ -1,16 +1,16 @@
+const usuario = {
+    nome: 'Diego',
+    idade: 23,
+    endereco:{
+        cidade: 'Rio do Sul',
+        uf: 'SC',
+        pais: 'Brasil',
+    }
+};
 
-const array = [1,2,3,4,5,6,7];
 
-const [x, ...y] = array;
+const usuario2 = {...usuario, nome: 'Gabriel'};
+console.log(usuario2);
 
-console.log(x);
-console.log(y);
-
-console.log('----------------------')
-
-function soma(...params){
-    return params.reduce((total,next) => total + next);
-}
-
-console.log(soma(1,2,3,4,5,6));
-console.log(soma(1,2));
+const usuario3 = {...usuario2, cidade: 'Lontras'};
+console.log(usuario3.cidade);
