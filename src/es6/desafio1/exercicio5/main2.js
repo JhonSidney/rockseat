@@ -14,3 +14,5 @@ console.log(usuario2);
 
 const usuario3 = {...usuario2, cidade: 'Lontras'};
 console.log(usuario3.cidade);
+
+console.log('----------------------------------')
