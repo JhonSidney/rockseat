@@ -7,7 +7,7 @@ const empresa ={
 
     }
 };
-/*
+
 const {nome, endereco:{cidade,estado}} = empresa;
 
 console.log(nome);
@@ -24,11 +24,4 @@ function mostrainfor({nome,idade}){
 
 const a = mostrainfor({nome: 'Diego', idade: 23});
 console.log(a);
-*/
 
-const array = [1,2,3,4,5,6,7];
-
-const [x, ...y];
-
-console.log(x);
-console.log(y);
